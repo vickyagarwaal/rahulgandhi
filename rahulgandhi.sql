@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Feb 08, 2022 at 04:45 PM
+-- Generation Time: Feb 08, 2022 at 06:02 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 7.4.26
 
@@ -46,8 +46,8 @@ CREATE TABLE `admins` (
 --
 
 INSERT INTO `admins` (`id`, `name`, `username`, `email`, `email_verified`, `role`, `image`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'vicky', 'vicky', 'upensuni@gmail.com', 1, 'super_admin', NULL, '$2y$10$EMHRkiGn/vxdJCPmBMjHMegGlAqNnp5mmU/EWGH2VgO8SLzWS/XOW', 'I47kLmJdbbh5xPg3gJ28rb3AsNUGfj803GGWotFWn8WfrKixkyllMeXrdQwg', '2021-12-17 11:08:34', '2021-12-17 11:08:34'),
-(2, 'paymentgateway', 'paymentgateway', 'paymentgateway@gmail.com', 0, 'super_admin', '125', '$2y$10$Q.4chitttFxIz/ymL97Qf.K08gSTYlOxqoBTh.DJ3yquuF9EZaO1i', NULL, '2022-02-08 08:26:16', '2022-02-08 08:26:16');
+(1, 'vicky', 'vicky', 'upensuni@gmail.com', 1, 'super_admin', NULL, '$2y$10$EMHRkiGn/vxdJCPmBMjHMegGlAqNnp5mmU/EWGH2VgO8SLzWS/XOW', 'kdzFuONIh0DaOFIUc7LWYywGaCUelYfDCLxzC5zFyErdQLEcengTjXsvVmtY', '2021-12-17 11:08:34', '2021-12-17 11:08:34'),
+(2, 'paymentgateway', 'paymentgateway', 'paymentgateway@gmail.com', 0, 'super_admin', '125', '$2y$10$Q.4chitttFxIz/ymL97Qf.K08gSTYlOxqoBTh.DJ3yquuF9EZaO1i', 'l6M0vmYZNIhN3Gr2U5025pOAuCnV9UB7rJ1pBPeBkCqKoy7OFz7frDqWzClU', '2022-02-08 08:26:16', '2022-02-08 08:26:16');
 
 -- --------------------------------------------------------
 
@@ -941,7 +941,8 @@ CREATE TABLE `product_orders` (
 INSERT INTO `product_orders` (`id`, `status`, `payment_status`, `coupon_code`, `transaction_id`, `payment_track`, `payment_gateway`, `user_id`, `subtotal`, `coupon_discount`, `shipping_cost`, `product_shippings_id`, `order_created_by`, `total`, `billing_name`, `billing_email`, `billing_phone`, `billing_country`, `billing_street_address`, `billing_town`, `billing_district`, `different_shipping_address`, `shipping_name`, `shipping_email`, `shipping_phone`, `shipping_country`, `shipping_street_address`, `shipping_town`, `shipping_district`, `cart_items`, `created_at`, `updated_at`) VALUES
 (25, 'pending', 'complete', NULL, NULL, 'vp7UMX7AZnEdEVpfvm8Y', 'cash_on_delivery', NULL, '1197', '0', '0', '1', NULL, '1376.55', 'Md Ismil', 'okkji.vicky5@gmail.com', '77092181', 'Qatar', 'Najma', 'Doha', 'Qatar', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'a:1:{i:7;a:5:{s:2:\"id\";i:7;s:5:\"title\";s:28:\"Porro iure recusanda Soaring\";s:8:\"quantity\";i:3;s:4:\"type\";s:8:\"physical\";s:5:\"price\";i:1197;}}', '2022-01-27 09:16:40', '2022-01-27 09:20:24'),
 (26, 'pending', 'pending', NULL, NULL, 'osK5bFhCnOoDV1B5J8Nb', 'razorpay', '14', '149', '0', '0', '1', NULL, '156.45', 'Md Ismil', 'okkji.vicky5@gmail.com', '+97477092181', 'Qatar', 'Najma', 'Doha', 'Qatar', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'a:1:{i:11;a:5:{s:2:\"id\";i:11;s:5:\"title\";s:35:\"Barnaby The Bear’s my name, never\";s:8:\"quantity\";i:1;s:4:\"type\";s:8:\"physical\";s:5:\"price\";i:149;}}', '2022-01-29 15:35:14', '2022-01-29 15:35:14'),
-(27, 'pending', 'pending', NULL, NULL, 'H37DuXczNkTZCACEeuz2', 'cash_on_delivery', NULL, '149', '0', '0', '1', NULL, '156.45', 'Md Ismil', 'okkji.vicky5@gmail.com', '77092181', 'Qatar', 'Najma', 'Doha', 'Qatar', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'a:1:{i:11;a:5:{s:2:\"id\";i:11;s:5:\"title\";s:35:\"Barnaby The Bear’s my name, never\";s:8:\"quantity\";i:1;s:4:\"type\";s:8:\"physical\";s:5:\"price\";i:149;}}', '2022-02-08 07:53:08', '2022-02-08 07:53:08');
+(27, 'pending', 'pending', NULL, NULL, 'H37DuXczNkTZCACEeuz2', 'cash_on_delivery', NULL, '149', '0', '0', '1', NULL, '156.45', 'Md Ismil', 'okkji.vicky5@gmail.com', '77092181', 'Qatar', 'Najma', 'Doha', 'Qatar', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'a:1:{i:11;a:5:{s:2:\"id\";i:11;s:5:\"title\";s:35:\"Barnaby The Bear’s my name, never\";s:8:\"quantity\";i:1;s:4:\"type\";s:8:\"physical\";s:5:\"price\";i:149;}}', '2022-02-08 07:53:08', '2022-02-08 07:53:08'),
+(28, 'pending', 'pending', NULL, NULL, 'Ib3RRQTLPGouK9ZGm30Y', 'razorpay', NULL, '29', '0', '0', '1', NULL, '29', 'Md Ismil', 'okkji.vicky5@gmail.com', '77092181', 'Qatar', 'Najma', 'Doha', 'Qatar', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'a:1:{i:2;a:5:{s:2:\"id\";i:2;s:5:\"title\";s:31:\"Lady who knows how to take care\";s:8:\"quantity\";i:1;s:4:\"type\";s:8:\"physical\";s:5:\"price\";i:29;}}', '2022-02-08 11:13:22', '2022-02-08 11:13:22');
 
 -- --------------------------------------------------------
 
@@ -1664,7 +1665,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `username`, `email_verified`, `phone`, `email_verify_token`, `address`, `state`, `city`, `zipcode`, `country`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(19, 'paymentgateway', 'paymentgateway@gmail.com', 'paymentgateway', NULL, NULL, NULL, NULL, NULL, 'asdf', NULL, 'Afganistan', '$2y$10$RuAIYzJSI.Cx.5tOWv0IwexskTKjSWOmYkIs75nPBPZ93BMIqfq1C', NULL, '2022-02-08 10:06:35', '2022-02-08 10:06:35');
+(19, 'paymentgateway', 'paymentgateway@gmail.com', 'paymentgateway', NULL, NULL, NULL, NULL, NULL, 'asdf', NULL, 'Afganistan', '$2y$10$RuAIYzJSI.Cx.5tOWv0IwexskTKjSWOmYkIs75nPBPZ93BMIqfq1C', 'KQPfvPKECewmbn197wAUG0homeZuxQDTQeRVuKrNOxGhs6kKaOFthNgYWEmx', '2022-02-08 10:06:35', '2022-02-08 10:06:35');
 
 -- --------------------------------------------------------
 
@@ -2126,7 +2127,7 @@ ALTER TABLE `product_coupons`
 -- AUTO_INCREMENT for table `product_orders`
 --
 ALTER TABLE `product_orders`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 
 --
 -- AUTO_INCREMENT for table `product_order_tracks`
