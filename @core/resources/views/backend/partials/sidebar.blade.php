@@ -72,7 +72,8 @@
                     </li>
                 
                     
-                   
+                   <li class="{{active_menu('admin-home/general-settings/payment-settings')}}"><a
+                                             href="{{route('admin.general.payment.settings')}}">{{__('Payment Gateway Settings')}}</a></li>
                     
                     
                     {{-- @medheal end--}}

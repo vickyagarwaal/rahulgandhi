@@ -51,7 +51,7 @@
 <!-- page container area start -->
 <div class="page-container">
     <!-- sidebar menu area start -->
-    @include('backend/partials/sidebar2')
+    @include('backend/partials/sidebar')
     <!-- sidebar menu area end -->
     <!-- main content area start -->
     <div class="main-content">

@@ -53,7 +53,7 @@
 <!-- page container area start -->
 <div class="page-container">
     <!-- sidebar menu area start -->
-    <?php echo $__env->make('backend/partials/sidebar2', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+    <?php echo $__env->make('backend/partials/sidebar', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
     <!-- sidebar menu area end -->
     <!-- main content area start -->
     <div class="main-content">

@@ -75,7 +75,8 @@
                     </li>
                 
                     
-                   
+                   <li class="<?php echo e(active_menu('admin-home/general-settings/payment-settings')); ?>"><a
+                                             href="<?php echo e(route('admin.general.payment.settings')); ?>"><?php echo e(__('Payment Gateway Settings')); ?></a></li>
                     
                     
                     
