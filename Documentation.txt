@@ -1,0 +1,25 @@
+1.Customer Panel: http://localhost/rahulgandhi/login
+
+Username:paymentgateway
+
+Gmail: paymentgateway@gmail.com
+Pass: 12345678
+
+2. Admin Panel: http://localhost/rahulgandhi/login/admin
+
+Username:paymentgateway
+Gmail: paymentgateway@gmail.com
+Pass: 12345678
+
+
+3. Gihtub Token : 4cd8d8c0bda60d78d37eba26cc1039573f51fa94
+
+4. Nimbbl Documentation: https://docs.nimbbl.tech/#/web-integration
+
+Nimbbl Merchant ID: IoIeciopAcRdDR
+
+
+5. Database: In Github Root Folder
+
+PHP >= 7.4
+
